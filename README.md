@@ -4,20 +4,15 @@
 
 ### AI-Powered Personalized Interview Preparation Platform
 
-Analyze your **Resume** and **Target Job Description** using **Google Gemini AI** to generate a personalized interview preparation roadmap, technical questions, behavioral questions, and skill gap analysis.
+**CareerPilot AI** is a full-stack **MERN + Generative AI** application that analyzes your **Resume** and **Target Job Description** to generate personalized interview preparation content using **Google Gemini AI**.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js" />
-  <img src="https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb" />
-  <img src="https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google" />
-  <img src="https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
 </p>
-
-### 🌐 Live Demo
-**Frontend:** https://YOUR-VERCEL-URL.vercel.app
-
-**Backend API:** https://YOUR-RENDER-URL.onrender.com
 
 </div>
 
@@ -25,66 +20,77 @@ Analyze your **Resume** and **Target Job Description** using **Google Gemini AI*
 
 # 📖 About
 
-**CareerPilot AI** is a full-stack AI-powered interview preparation platform that helps candidates prepare smarter for job interviews.
+Preparing for interviews requires understanding the job description, identifying skill gaps, and practicing role-specific questions. CareerPilot AI automates this entire workflow using **Google Gemini AI**.
 
-Instead of providing generic interview questions, the application analyzes your **Resume** and **Target Job Description** using **Google Gemini AI** to create a completely personalized interview preparation experience.
+The platform analyzes both the candidate's **Resume** and **Target Job Description** to generate:
 
-The platform identifies missing skills, highlights strengths, generates technical and behavioral interview questions, and creates a roadmap tailored to the specific role you're targeting.
+- Personalized Interview Preparation Roadmap
+- Technical Interview Questions
+- Behavioral Interview Questions
+- Skill Gap Analysis
+- Resume Insights
+- AI-Powered Career Suggestions
 
 ---
 
 # ✨ Features
 
-### 🤖 AI Features
+## 🤖 AI Features
 
-- Resume Analysis
+- Resume Analysis using Gemini AI
 - Job Description Analysis
-- Personalized Interview Roadmap
+- Personalized Preparation Roadmap
 - Technical Interview Questions
 - Behavioral Interview Questions
-- Skill Gap Analysis
-- AI Career Suggestions
+- Skill Gap Identification
+- AI-Based Career Suggestions
 
-### 👤 Authentication
+---
+
+## 👤 Authentication
 
 - User Registration
 - Secure Login
 - JWT Authentication
-- HTTP-only Cookies
+- HTTP-only Cookie Authentication
 - Protected Routes
 
-### 📄 Resume Processing
+---
 
-- Upload PDF Resume
-- AI Resume Parsing
+## 📄 Resume Processing
+
+- PDF Resume Upload
+- Resume Parsing
+- AI Content Analysis
 - Personalized Recommendations
 
-### 🔒 Security
+---
+
+## 🔒 Security
 
 - Helmet Security
 - Rate Limiting
+- Secure Cookies
 - CORS Protection
 - Environment Variables
 - Password Hashing
 
 ---
 
-# 🏗 System Architecture
+# 🏗️ System Architecture
 
 ```text
-                    React Frontend (Vite)
-                            │
-                            │
-                      REST API Requests
-                            │
-                            ▼
-                  Express.js Backend
-                            │
-          ┌─────────────────┴─────────────────┐
-          │                                   │
-          ▼                                   ▼
-   MongoDB Atlas                     Google Gemini AI
-(Authentication)                (Interview Generation)
+                   React Frontend
+                         │
+                         │ REST API
+                         ▼
+                 Express.js Backend
+                         │
+        ┌────────────────┴────────────────┐
+        │                                 │
+        ▼                                 ▼
+ MongoDB Atlas                  Google Gemini AI
+(User Authentication)       (Interview Generation)
 ```
 
 ---
@@ -93,7 +99,7 @@ The platform identifies missing skills, highlights strengths, generates technica
 
 ## Frontend
 
-- React 19
+- React
 - React Router
 - Axios
 - Sass (SCSS)
@@ -103,7 +109,7 @@ The platform identifies missing skills, highlights strengths, generates technica
 
 - Node.js
 - Express.js
-- JWT
+- JWT Authentication
 - Multer
 - Cookie Parser
 - Helmet
@@ -114,14 +120,9 @@ The platform identifies missing skills, highlights strengths, generates technica
 - MongoDB Atlas
 - Mongoose
 
-## AI
+## Generative AI
 
 - Google Gemini API
-
-## Deployment
-
-- Vercel
-- Render
 
 ---
 
@@ -140,22 +141,22 @@ CareerPilotAI
 │
 ├── backend
 │   ├── src
-│   │   ├── config
-│   │   ├── controllers
-│   │   ├── middleware
-│   │   ├── models
-│   │   ├── routes
-│   │   └── services
 │   │
-│   ├── server.js
-│   └── package.json
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── services
+│   └── utils
 │
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-# 🚀 Installation
+# 🚀 Getting Started
 
 ## Clone Repository
 
@@ -175,7 +176,7 @@ npm install
 npm start
 ```
 
-Create a `.env` file:
+Create a `.env` file
 
 ```env
 MONGO_URI=YOUR_MONGODB_URI
@@ -199,34 +200,11 @@ npm install
 npm run dev
 ```
 
-Create a `.env` file:
+Create a `.env` file
 
 ```env
 VITE_API_URL=http://localhost:3000
 ```
-
----
-
-# 📡 API Endpoints
-
-## Authentication
-
-| Method | Endpoint |
-|---------|----------|
-| POST | `/api/auth/register` |
-| POST | `/api/auth/login` |
-| POST | `/api/auth/logout` |
-| GET | `/api/auth/profile` |
-
----
-
-## Interview
-
-| Method | Endpoint |
-|---------|----------|
-| POST | `/api/interview/generate` |
-| GET | `/api/interview/history` |
-| GET | `/api/interview/:id` |
 
 ---
 
@@ -248,92 +226,68 @@ Paste Job Description
 Google Gemini AI
  │
  ├── Resume Analysis
- ├── Skill Gap Analysis
- ├── Personalized Roadmap
+ ├── Job Description Analysis
+ ├── Skill Gap Detection
  ├── Technical Questions
- └── Behavioral Questions
+ ├── Behavioral Questions
+ └── Personalized Roadmap
  │
  ▼
-Preparation Dashboard
+Interview Preparation Dashboard
 ```
 
 ---
 
 # 📸 Screenshots
 
-## 🏠 Home Page
+### 🏠 Home Page
 
-> Add screenshot here
+_Add screenshot_
 
----
+### 🔐 Login
 
-## 🔐 Login Page
+_Add screenshot_
 
-> Add screenshot here
+### 📄 Resume Upload
 
----
+_Add screenshot_
 
-## 📄 Resume Upload
+### 🤖 AI Generated Report
 
-> Add screenshot here
+_Add screenshot_
 
----
+### 🛣️ Preparation Roadmap
 
-## 🤖 AI Generated Report
+_Add screenshot_
 
-> Add screenshot here
+### 💬 Interview Questions
 
----
-
-## 🛣 Preparation Roadmap
-
-> Add screenshot here
+_Add screenshot_
 
 ---
 
-## 💬 Interview Questions
-
-> Add screenshot here
-
----
-
-# 🔐 Security
+# 🔒 Security Features
 
 - JWT Authentication
 - HTTP-only Cookies
 - Password Hashing
-- Helmet
-- Rate Limiting
-- CORS Protection
-- Environment Variables
-- Secure API Validation
+- Helmet Security
+- Express Rate Limiting
+- CORS Configuration
+- Environment Variable Protection
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Enhancements
 
 - AI Mock Interview
 - Voice-Based Interview Practice
 - ATS Resume Score
 - Resume Optimizer
-- Company-Specific Interview Kits
+- Company-Specific Interview Preparation
 - PDF Report Export
-- Email Report Sharing
-- Interview Progress Analytics
+- Interview Progress Tracking
 - Multi-language Support
-
----
-
-# 💡 Why CareerPilot AI?
-
-Unlike traditional interview preparation platforms, CareerPilot AI creates a **personalized preparation plan** by combining:
-
-- Resume Analysis
-- Target Job Description
-- Google Gemini AI
-- Skill Gap Detection
-
-This helps candidates prepare specifically for the role they are applying for instead of practicing generic interview questions.
 
 ---
 
@@ -343,20 +297,14 @@ This helps candidates prepare specifically for the role they are applying for in
 
 **B.Tech Information Technology**
 
-Full Stack MERN Developer • AI Enthusiast
-
-📧 Email: YOUR_EMAIL
-
-💼 LinkedIn: YOUR_LINKEDIN
-
-🐙 GitHub: https://github.com/Tiwari-Tech
+Full Stack MERN Developer | Generative AI Enthusiast
 
 ---
 
 <div align="center">
 
-## ⭐ If you found this project useful, please consider giving it a Star!
+### ⭐ If you found this project useful, consider giving it a Star!
 
-Made with ❤️ by **Someshmani Tiwari**
+**Built with ❤️ using the MERN Stack and Google Gemini AI**
 
 </div>
